@@ -1,0 +1,194 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[colorinlistoftodos]{todonotes}
+
+\usepackage[utf8x]{inputenc}
+
+\usepackage{colortbl}  %color para las tablas
+
+\addtolength{\textwidth}{4cm} %a\~{n}ade 4 cm de texts
+\addtolength{\hoffset}{-2cm} %quita 2 cm de margen izquierdo
+\addtolength{\voffset}{-2cm} %quita 3 cm de margen superior
+\addtolength{\textheight}{3cm}
+
+\usepackage{hyperref}
+\usepackage{fancybox}%para colocar cajas con sombra, marcodoble, etc pg(148)
+% Esto es para poder escribir acentos directamente:
+%\usepackage[latin1]{inputenc}
+% Esto es para que el LaTeX sepa que el texto está en español:
+\usepackage[spanish]{babel}
+\usepackage{multicol}
+%\usepackage{wrapfig} %Inclusi\'{o}n de gr\'{a}ficos al lado de texto
+\usepackage[rflt]{floatflt} %Para meter figuras flotantes entre el texto
+\usepackage{graphicx}%para el uso de graficos
+
+
+% Paquetes de la AMS:
+\usepackage{amsmath, amsthm, amsfonts}
+\usepackage{verbatim} %para utilizatr comentarios de mas de una linea con \begin{comment}
+
+% Teoremas
+%--------------------------------------------------------------------------
+\newtheorem{thm}{Teorema}[section]
+\newtheorem{cor}[thm]{Corolario}
+\newtheorem{lem}[thm]{Lema}
+\newtheorem{prop}[thm]{Proposición}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definición}
+\theoremstyle{remark}
+\newtheorem{rem}[thm]{Observación}
+
+
+% Atajos.
+% Se pueden definir comandos nuevos para acortar cosas que se usan
+% frecuentemente. Como ejemplo, aquí se definen la R y la Z dobles que
+% suelen representar a los conjuntos de números reales y enteros.
+%--------------------------------------------------------------------------
+
+
+
+\def\RR{\mathbb{R}}
+\def\ZZ{\mathbb{Z}}
+
+% De la misma forma se pueden definir comandos con argumentos. Por
+% ejemplo, aquí definimos un comando para escribir el valor absoluto
+% de algo más fácilmente.
+%--------------------------------------------------------------------------
+\newcommand{\abs}[1]{\left\vert#1\right\vert}
+
+
+% Operadores.
+% Los operadores nuevos deben definirse como tales para que aparezcan
+% correctamente. Como ejemplo definimos en jacobiano:
+%--------------------------------------------------------------------------
+\DeclareMathOperator{\Jac}{Jac}
+\renewcommand{\abstractname}{Resumen:}
+\newcommand{\HRule}{\rule{\linewidth}{1mm}}
+%--------------------------------------------------------------------------
+
+ 
+
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% First Page 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagestyle{empty}
+\thispagestyle{empty}
+
+
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.35\textwidth]{Pi.jpg}
+\includegraphics[width=0.35\textwidth]{Pi.jpg}
+\includegraphics[width=0.35\textwidth]{Pi.jpg}
+
+\end{figure}
+
+
+\HRule
+
+\begin{center}
+        {\Huge El Fascinante numero PI} \\[2.5mm] 
+        {\Huge Curiosidades y Mitos} \\[2.5mm]
+        {\Large Jesús Manuel Rodríguez Falcón} \\[5mm]
+        {\Large \textit{Grupo 3 }} \\[5mm]
+
+
+        {\em Técnicas Experimentales. $1^{er}$ curso. $2^{do}$ semestre} \\[5mm]
+        Lenguajes y Sistemas Informáticos \\[5mm]
+        Facultad de Matemáticas.  Universidad de La Laguna  \\
+        
+        La Laguna, \today 
+\end{center}
+
+\HRule
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagestyle{myheadings} %my head defined by markboth or markright
+% No funciona bien \markboth sin "twoside" en \documentclass, pero al
+% ponerlo se dan un montón de errores de underfull \vbox, con lo que no se
+% ha puesto.
+\markboth{Jesús Manuel Rodríguez Falcón}{ El Fascinante numero PI. Curiosidades y Mitos}
+
+
+
+\begin{abstract}
+
+\end{abstract}
+
+
+
+\section {Introducción:}
+ El Día de Pi o Día de la aproximación de Pi es una fecha en honor de la expresión matemática Pi (3,1415926) que expresa la relación entre la longitud de una circunferencia y su diámetro. Se trata de una ocurrencia del físico Larry Shaw tomando el formato de fechas norteamericano, que antepone el mes al día (3/14) y para ser más precisos y aproximar más dígitos al peculiar número, se concentra a las 1:59 PM -aunque algunas personas consideran que lo correcto sería a las 1:59 AM para no confundirse con las 13:59-.\footnote{Extraido de \href{http://www.europapress.es/portaltic/portalgeek/noticia-10-curiosidades-matematicas-celebrar-dia-pi-20140314121115.html}{Curiosidades de PI}}\\
+
+\noindent La fecha se celebra desde que en 2009 la Cámara de Representantes declaró el 14 de marzo como día nacional del peculiar número. No hay una guía oficial sobre cómo celebrar el día de Pi, pero en Portaltic te proponemos que eches un vistazo a estas 10 curiosidades:\cite{Libro_Visual}.
+
+\subsection{ORIGENES DE SU REPRESENTACIÓN:}
+ El matemático William Jones utilizó por primera vez el 	símbolo en 1706, pero el suizo Leonhard Euler fue quien lo generalizó, en 1737. Sin embargo, en el año 3 a.C. Arquímedes ya había obtenido su aproximación con bastante exactitud.
+ 
+\subsection{LA CUADRATURA DEL CÍRCULO:} 
+ Se trata de un número irracional -que no puede expresarse como fracción de dos números enteros-. Así lo demostró Johann Heinrich Lambert en el siglo XVIII. Además es un número trascendente -que no es la raíz de ningún polinomio de coeficientes enteros-.
+
+   En el siglo XIX el matemático alemán Ferdinand Lindemann así lo demostró. Con ello cerró definitivamente la permanente investigación acerca del problema de la cuadratura del círculo... indicando que no tiene solución.
+   
+\subsection{IRRACIONAL CON ...¿CÚANTAS CIFRAS SE HAN DESCUBIERTO?}
+ La relación entre la circunferencia y su diámetro es un número irracional y hasta el momento se han llegado a descubrir hasta 10 billones de decimales. Este récord lo ostentan los ingenieros informáticos Shigeru Kondo y Alexander J. Yee.
+ 
+ \subsection{Y ¿Quién es mas cibra que conoce de $\Pi$?}
+  Sin embargo, más difícil es aprendérselo de memoria. Es el pasatiempo de algunas mentes privilegiadas: el campeón es el chino Lu Chao, que es capaz de recitar 67. 890 decimales. Sin embargo, otros grandes cerebros como Hiroyuki Goto (42.195 decimales) o Akira Haraguchi le intentan arrebatar el título.
+   
+
+\section{segunda sección}
+	\subsection{}
+
+\section{tercera sección}
+	\subsection{}
+
+%TABLA
+\begin{tabular}{||>{\columncolor[rgb]{0.7,0,0.7}}l | c | c | c||}
+ \hline
+  \multicolumn{4}{|c|}{Aproximaciones de pi con tolerancia} \\
+  \hline
+\hline
+\rowcolor[rgb]{0,1,1} i     &  PI35DT   &       lista i     &    PI35DT - lista i \\
+\hline
+1   &    3.1415926536 &   3.2000000000  &  0.0584073464\\
+\hline
+2   &    3.1415926536 &   3.1623529412  &  0.0207602876\\
+\hline
+3   &    3.1415926536 &   3.1508492099  &  0.0092565563\\
+\hline
+4   &    3.1415926536 &   3.1468005184  &  \cellcolor{red}0.0052078648\\
+\hline
+\hline
+
+
+\end{tabular}
+
+\newpage
+
+%BIBLIOGRAFIA
+
+\begin{thebibliography}{99} 
+
+\bibitem{Libro_Visual} Francisco Javier Ceballos: Enciclopedia de Microsoft Visual Basic. Editorial Ra-Ma. Madrid, 1999.
+
+\bibitem{Libro_Visual} Francisco Javier Ceballos: Enciclopedia de Microsoft Visual Basic. Editorial Ra-Ma. Madrid, 1999.
+
+
+
+\end{thebibliography}.
+
+
+
+
+
+
+
+\end{document}
